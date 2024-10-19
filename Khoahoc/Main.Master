@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Khoahoc.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style21 {
+            height: 363px;
+        }
+        .auto-style8 {}
+        .auto-style22 {
+            width: 278px;
+        }
+        .auto-style23 {
+            height: 363px;
+            width: 269px;
+        }
+        .auto-style24 {
+            width: 269px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/image/logocrosstech.png" Width="276px" Height="292px" />
+        <asp:Image ID="Image2" runat="server" Height="292px" ImageUrl="~/image/biacrosstech.jpg" Width="1213px" />
+     
+    </div>
+    <table class="auto-style1">
+        <tr>
+            <td class="auto-style24"></td>
+            <td class="auto-style22">
+            <asp:Menu ID="Menu2" runat="server"
+            Orientation="Horizontal" Font-Size="X-Large"
+            Height="40px" BackColor="#99FF99"
+            RenderingMode="Table" Width="1198px" ForeColor="#003300"
+            Style="padding-left: 10px; margin-left: 0px;" CssClass="auto-style11">
+            <Items>
+                <asp:MenuItem Text="Trang Chủ" NavigateUrl="~/Trangchu.aspx" Value="1"></asp:MenuItem>
+                <asp:MenuItem Text="Về Chúng Tôi" NavigateUrl="~/VeChungToi.aspx" Value="2"></asp:MenuItem>
+                <asp:MenuItem Text="Đổi mật khẩu" NavigateUrl="~/Doimatkhau.aspx" Value="3"></asp:MenuItem>
+                <asp:MenuItem Text="Đăng Nhập" NavigateUrl="~/Login.aspx" Value="4"></asp:MenuItem>
+                <asp:MenuItem Text="Đăng Ký" NavigateUrl="~/DangKy.aspx" Value="4"></asp:MenuItem>
+                <asp:MenuItem Text="Đăng Xuất" NavigateUrl="~/Login.aspx" Value="4"></asp:MenuItem>
+            </Items>
+            </asp:Menu>
+            </td>
+            <td class="auto-style9"></td>
+        </tr>
+        <tr>
+            <td class="auto-style23">
+
+                <asp:Label ID="Label1" runat="server" BackColor="White" Font-Bold="True" Font-Size="X-Large" ForeColor="#006600" Text="Danh Mục KHÓA HỌC" BorderStyle="None"></asp:Label>
+
+               <asp:Menu ID="Menu1" runat="server" BorderColor="#006600" CssClass="auto-style8" ForeColor="#006600" StaticSubMenuIndent="50px" Width="267px" BorderStyle="Double" Height="276px" RenderingMode="Table" BackColor="#CCFFCC" Font-Bold="True" Font-Size="X-Large">
+                <Items>
+                    <asp:MenuItem Text="KHÓA HỌC SẮP DIỄN RA" NavigateUrl="~/TrangChuKhoaHocSapDienRa.aspx" Value="1"></asp:MenuItem>
+                    <asp:MenuItem Text="KHÓA HỌC NỔI BẬT" NavigateUrl="~/TrangChuKhoaHocNoiBat.aspx" Value="2"></asp:MenuItem>
+                    <asp:MenuItem Text="KHÓA HỌC KẾT THÚC" NavigateUrl="~/TrangChuKhoaHocDaKetThuc.aspx" Value="3"></asp:MenuItem>
+                    
+                </Items>
+                </asp:Menu>
+            </td>
+            <td class="auto-style21" colspan="2">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style12" colspan="2">
+                <div id="text-3758808695" class="text title_footer" style="box-sizing: border-box; font-style: normal; font-weight: bold; font-size: 18px; line-height: 22px; color: rgb(255, 255, 255); font-family: Montserrat, sans-serif; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(241, 96, 96); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+                    <p style="box-sizing: border-box; margin-bottom: 1.3em; margin-top: 0px; color: rgb(241, 241, 241);">
+                        CONTACT US</p>
+                    <div class="location" style="box-sizing: border-box;">
+                        <i aria-hidden="true" class="fa-solid fa-location-dot" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; display: var(--fa-display,inline-block); font-style: normal; font-variant: normal; line-height: 1; text-rendering: auto; font-family: &quot;Font Awesome 6 Free&quot;; font-weight: 900;"></i><span>&nbsp;</span>Room 112A, Building A, Software Technology Park, Internal Road of Vietnam National University, Ho Chi Minh City, Quarter 6, Linh Trung Ward, Thu Duc City, Ho Chi Minh City</div>
+                    <div class="phone" style="box-sizing: border-box;">
+                        <i aria-hidden="true" class="fa-solid  fa-phone" style="box-sizing: border-box; -webkit-font-smoothing: antialiased; display: var(--fa-display,inline-block); font-style: normal; font-variant: normal; line-height: 1; text-rendering: auto; font-family: &quot;Font Awesome 6 Free&quot;; font-weight: 900;"></i><span>&nbsp;</span><a href="https://crosstechhub.com/0963282927" style="box-sizing: border-box; background-color: transparent; touch-action: manipulation; color: currentcolor; text-decoration: none;">0963282927</a> <a href="mailto:info@crosstechhub.com" style="box-sizing: border-box; background-color: transparent; touch-action: manipulation; color: currentcolor; text-decoration: none;">info@crosstechhub.com</a><br />
+                        <div id="text--2147483648" class="text title_footer" style="box-sizing: border-box; font-style: normal; font-weight: bold; font-size: 18px; line-height: 22px; color: rgb(255, 255, 255); font-family: Montserrat, sans-serif; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(241, 96, 96); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+                            <p style="box-sizing: border-box; margin-bottom: 1.3em; margin-top: 0px; color: rgb(241, 241, 241);">
+                                ABOUT US</p>
+                        </div>
+                        <p style="box-sizing: border-box; margin-bottom: 1.3em; margin-top: 0px; color: rgb(241, 241, 241); font-family: Montserrat, sans-serif; font-size: 17px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(241, 96, 96); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+                            The synergy of what CrossTech Team does comes from a blend of passion for success and speeding skills.</p>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        </table>
+</form>
+</body>
+</html>
